@@ -218,23 +218,27 @@
                     無論是新產品開發，還是現有設備的效能改善，我都能提供專業的工程建議。
                 </p>
 
-                <form class="space-y-4 max-w-lg mx-auto relative z-10">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <input type="text" placeholder="您的姓名" class="w-full px-5 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <input type="text" placeholder="公司/單位名稱" class="w-full px-5 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    </div>
-                    <input type="email" placeholder="電子郵件" class="w-full px-5 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <select class="w-full px-5 py-3 rounded-lg bg-slate-800 border border-slate-700 text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <option>請選擇專案類型...</option>
-                        <option>工業設備/環境工程 (CFD需求)</option>
-                        <option>醫療器材/結構分析 (FEA需求)</option>
-                        <option>消費性電子/機構設計</option>
-                        <option>其他設計諮詢</option>
-                    </select>
-                    <button class="w-full bg-blue-600 text-white font-bold py-4 rounded-lg hover:bg-blue-500 transition duration-300 shadow-lg">
-                        免費諮詢報價
-                    </button>
-                </form>
+                <form action="https://formspree.io/f/mgvgzbap" method="POST" class="space-y-4 max-w-lg mx-auto relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="text" name="name" required placeholder="您的姓名" class="w-full px-5 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <input type="text" name="company" placeholder="公司/單位名稱" class="w-full px-5 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+    <input type="email" name="email" required placeholder="電子郵件" class="w-full px-5 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+    
+    <select name="service_type" class="w-full px-5 py-3 rounded-lg bg-slate-800 border border-slate-700 text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <option value="" disabled selected>請選擇專案類型...</option>
+        <option value="工業設備CFD">工業設備/環境工程 (CFD需求)</option>
+        <option value="醫療器材FEA">醫療器材/結構分析 (FEA需求)</option>
+        <option value="機構設計">消費性電子/機構設計</option>
+        <option value="其他諮詢">其他設計諮詢</option>
+    </select>
+    
+    <textarea name="message" rows="4" placeholder="請簡述您的需求..." class="w-full px-5 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+
+    <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-lg hover:bg-blue-500 transition duration-300 shadow-lg">
+        免費諮詢報價
+    </button>
+</form>
             </div>
         </div>
     </section>
